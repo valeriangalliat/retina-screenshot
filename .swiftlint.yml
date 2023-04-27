@@ -1,0 +1,4 @@
+analyzer_rules:
+  - explicit_self
+identifier_name:
+  min_length: 1

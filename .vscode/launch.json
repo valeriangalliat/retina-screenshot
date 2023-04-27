@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug",
+      "program": "${workspaceFolder}/test",
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Debug retina-screenshot",
+      "program": "${workspaceFolder:retina-screenshot}/.build/debug/retina-screenshot",
+      "args": [],
+      "cwd": "${workspaceFolder:retina-screenshot}",
+      "preLaunchTask": "swift: Build Debug retina-screenshot"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "name": "Release retina-screenshot",
+      "program": "${workspaceFolder:retina-screenshot}/.build/release/retina-screenshot",
+      "args": [],
+      "cwd": "${workspaceFolder:retina-screenshot}",
+      "preLaunchTask": "swift: Build Release retina-screenshot"
+    }
+  ]
+}

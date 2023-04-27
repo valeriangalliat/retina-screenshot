@@ -1,0 +1,4 @@
+/retina-screenshot
+/.build
+/.swiftpm
+/xcodebuild.log
