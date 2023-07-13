@@ -25,8 +25,7 @@ bigger than they should be.
 ```sh
 git clone https://github.com/valeriangalliat/retina-screenshot.git
 cd retina-screenshot
-swift build
-mv .build/debug/retina-screenshot .
+make
 ./retina-screenshot --help
 ```
 
